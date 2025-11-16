@@ -1,1 +1,136 @@
 /* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  background: #000;
+  width: 100%;
+  color: #fff;
+}
+
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 40px 30px;
+}
+
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-details .logo_name {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.media-icons a {
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.media-icons a:nth-child(1) { background: #3b5999; }
+.media-icons a:nth-child(2) { background: #55acee; }
+.media-icons a:nth-child(3) { background: #e4405f; }
+.media-icons a:nth-child(4) { background: #0077b5; }
+.media-icons a:nth-child(5) { background: #cd201f; }
+
+.link-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.link-boxes .box {
+  list-style: none;
+  width: 22%;
+}
+
+.link-boxes .box .link_name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.link-boxes .box .link_name::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+
+.link-boxes .box li {
+  margin: 8px 0;
+}
+
+.link-boxes .box li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link-boxes .box li a:hover {
+  color: #fff;
+  margin-left: 5px;
+}
+
+.bottom-details {
+  width: 100%;
+  background: #2d2e33;
+  padding: 20px 30px;
+}
+
+.bottom-details .bottom_text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #ccc;
+}
+
+.bottom-details .bottom_text a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.bottom-details .bottom_text a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .link-boxes {
+    flex-direction: column;
+  }
+
+  .link-boxes .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .media-icons {
+    margin-top: 15px;
+  }
+}
